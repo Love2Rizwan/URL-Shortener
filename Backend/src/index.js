@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 });
 
   // Route App
-app.use("/api/v4", route)
+app.use("/", route)
 
 
 // PORT
