@@ -4,10 +4,10 @@ const { urlCreation, getUrl } = require("../controller/UrlController");
 
 
 //  Router || Post
-router.post("/url/shorten", urlCreation);
+router.post("/api/url/shorten", urlCreation);
 
 //  Router || Get
-router.get("/:urlCode", getUrl);
+router.get("/api/:urlCode", getUrl);
 
 
 

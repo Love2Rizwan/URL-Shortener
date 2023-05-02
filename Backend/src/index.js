@@ -35,37 +35,9 @@ app.get("/", (req, res) => {
 
 
   // Route App
-app.use("/api", route)
+app.use("/", route)
 
 
-
-
-
-// // server the frontend
-// const path = require("path");
-
-
-// app.use(
-//   express.static(path.join(__dirname, "./Frontend/dist"), {
-//     setHeaders: function (res, path) {
-//       if (mime.getType(path) === "application/javascript") {
-//         res.setHeader("Content-Type", "application/javascript");
-//       }
-//     },
-//   })
-// );
-
-
-
-// app.get("*", (req, res) => {
-//   res.sendFile(
-//     path.join(__dirname, "../Frontend/dist/index.html"),
-//     function (err) {
-//       res.status(500).send(err)
-//     }
-
-//   )
-// })
 
 
 // PORT
