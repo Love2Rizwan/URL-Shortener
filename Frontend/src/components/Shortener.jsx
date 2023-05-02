@@ -23,29 +23,19 @@ function Shortener() {
     }
   };
 
-  // const handleCopy = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     if (shortUrl) {
-  //       await navigator.clipboard.writeText(shortUrl.shortUrl);
-  //       setCopySuccess(true);
-  //     }
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
-
   const handleCopy = async (e) => {
     e.preventDefault();
     try {
       if (shortUrl) {
-        await navigator.clipboard.writeText(shortUrl);
+        await navigator.clipboard.writeText(shortUrl.shortUrl);
         setCopySuccess(true);
       }
     } catch (error) {
       console.log(error);
     }
   };
+
+
 
 
 
