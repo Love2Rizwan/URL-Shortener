@@ -32,12 +32,8 @@ app.get("/", (req, res) => {
     res.status(201).json({message: "Connected to Backend!"});
 });
 
-
-
   // Route App
-app.use("/", route)
-
-
+app.use("/api", route)
 
 
 // PORT
