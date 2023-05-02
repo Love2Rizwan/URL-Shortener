@@ -29,6 +29,7 @@ function Shortener() {
       if (shortUrl) {
         await navigator.clipboard.writeText(shortUrl.shortUrl);
         setCopySuccess(true);
+        setCopiedCount(copiedCount + 1); // increment copiedCount on successful copy
       }
     } catch (error) {
       console.log(error);
