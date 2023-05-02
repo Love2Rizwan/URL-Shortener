@@ -1,0 +1,79 @@
+.form {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 92, 1) 55%,
+    rgba(0, 108, 255, 1) 100%
+  );
+
+  width: 100vw;
+ min-height: 100vh;
+  text-align: center;
+  padding: 14rem;
+}
+
+.tag{
+  width: 30vw;
+  height: 8vh;
+   position: absolute;
+  right: 60rem;
+  top: 1.5rem;
+  color: white;
+  font-size: 3rem;
+}
+
+
+.form-control {
+  width: 40vw;
+  height: 6.5vh;
+}
+.btn-primary {
+  padding: 0.5rem;
+  margin: 2rem;
+  position: absolute;
+  left: 59rem;
+  top: 190px;
+}
+
+
+
+.short {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 4px;
+  width: 28vw;
+  height: 6.5vh;
+  position: absolute;
+  left: 31rem;
+  top: 22rem;
+}
+
+.btn-success {
+  padding: 0.5rem;
+  margin: 2rem;
+  position: absolute;
+  left: 53.6rem;
+  top: 20rem;
+}
+
+
+.longUrl{
+color: white;
+  padding: 0.2rem;
+  margin: 2rem;
+  position: absolute;
+  right: 58.3rem;
+  top: 12rem;
+}
+
+.shortUrl{
+  color: azure;
+  padding: 0.2rem;
+  margin: 2rem;
+  position: absolute;
+  right: 53rem;
+  top: 20rem;
+
+}
+
