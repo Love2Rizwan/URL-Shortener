@@ -69,7 +69,7 @@ const urlCreation = async function (req, res) {
     //  Generate Short Url By ShortId
     const urlCode = shortid.generate().toLowerCase();
 
-    const baseUrl = "http://localhost:8080/api";
+    const baseUrl = "http://localhost:8080/";
 
     const obj = {
       longUrl: longUrl,
