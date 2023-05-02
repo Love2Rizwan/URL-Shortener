@@ -22,19 +22,23 @@ app.use(express.json())
 // parse application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: false }))
 app.use(cors());
-// app.use(express.static(__dirname + "/public"));
 
 
 // Connect MongoDB 
 connectDB();
 
+// route
+app.get("/", (req, res) => {
+    res.status(201).json({message: "Connected to Backend!"});
+});
+
+
+
   // Route App
 app.use("/api", route)
 
 
-app.get("/", function (req, res) {
-  res.status(200).send({message: "Backend working fine"})
-})
+
 
 
 // // server the frontend
