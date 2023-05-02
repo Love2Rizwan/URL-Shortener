@@ -22,7 +22,7 @@ app.use(express.json())
 // parse application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: false }))
 app.use(cors());
-
+// app.use(express.static(__dirname + "/public"));
 
 
 // Connect MongoDB 
@@ -32,6 +32,9 @@ connectDB();
 app.use("/api", route)
 
 
+app.get("/", function (req, res) {
+  res.status(200).send({message: "Backend working fine"})
+})
 
 
 // // server the frontend
