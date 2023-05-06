@@ -12,8 +12,7 @@ function Shortener() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        // "https://url-shortener-oo10.onrender.com/url/shorten",
-        "http://localhost:8080/url/shorten",
+        "https://url-shortener-oo10.onrender.com/url/shorten",
         { longUrl }
       );
       console.log("Response:", response.data); // Log the response data
