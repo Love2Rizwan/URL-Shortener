@@ -69,11 +69,12 @@ const urlCreation = async function (req, res) {
     //  Generate Short Url By ShortId
     const urlCode = shortid.generate().toLowerCase();
 
-    const baseUrl = "http://localhost:8080";
+    const apiUrl = 'http://localhost:8080';
+
 
     const obj = {
       longUrl: longUrl,
-      shortUrl: baseUrl + "/" + urlCode,
+      shortUrl: apiUrl + "/" + urlCode,
       urlCode: urlCode,
     };
     // DB call
